@@ -104,7 +104,7 @@ img {
 .contact-nav {
   display: flex;
   margin-left: auto;
-  align-items: center;
+  
   
 }
 .contact-nav .item + .item {
@@ -121,6 +121,7 @@ img {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  
 }
 .contact-nav .link:hover,
 .contact-nav .link:focus {
@@ -129,8 +130,9 @@ img {
 }
 .contact-nav .link::before{
   display: inline-block;
+  align-items: center;
   content: "";
- /* background-position: bottom bottom; */
+ background-position: center;
  background-size: contain;
   margin-right: 10px;
   
@@ -297,13 +299,13 @@ background-position:center;
   /* background-color: rebeccapurple; */
   
 }
-.activity-title {
+.title {
   font-style: normal;
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
   margin-top: 0;
-  padding-top: 0;
+  /* padding-top: 0; */
   margin-bottom: 50px;
 }
 .list.activity {
@@ -331,15 +333,15 @@ background-position:center;
 .team-card.list {
   display: flex;
 }
-.team-title {
+/* .team-title {
   font-style: normal;
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
   margin-top: 0;
   margin-bottom: 50px;
-  
-}
+   */
+/* } */
 .team-person .name {
   font-style: normal;
   font-weight: 500;
@@ -357,7 +359,37 @@ background-position:center;
   line-height: 1.18;
   text-align: center;
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 16px;
+}
+.team-follow{
+  display: flex;
+  margin-right: 32px;
+  margin-left: 32px;
+}
+
+.team-follow .social::before{
+  
+  background-color: #2196f3;
+}
+.social.instagram-team::before{
+  background-image: url(../images/instagram.svg);
+}
+.social.twitter-team::before{
+  background-image: url(../images/twitter.svg);
+}
+.social.facebook-team::before{
+  background-image: url(../images/facebook.svg);
+}
+.social.linkedin-team::before{
+  background-image: url(../images/linkedin.svg);
+}
+
+/* Постоянные клиенты */
+.client list{
+  display: flex;
+}
+.client-item{
+  display: inline-block;
 }
 
 /*footer*/
@@ -367,9 +399,7 @@ background-position:center;
   background-color: var(--background-darkgrey);
   
 }
-.block-adress{
-  
-}
+
 .container.footer{
   display: flex;
 }
@@ -436,7 +466,7 @@ line-height: 1.14;
   margin-right: 10px;
 }
 .social::before{
-  display: inline-block;
+  display: block;
   content: "";
   width: 44px;
   height: 44px;
@@ -444,30 +474,34 @@ line-height: 1.14;
   background-position: center;
   background-repeat: no-repeat;
   background-size: 20px 20px;
-  
-  background-color: rgba(255, 255, 255, 0.1);
+    
 }
 .social:last-child{
   margin-right: 0;
 }
-.social:hover,
-.social:focus{
+.follow-order > .social:hover,
+.follow-order > .social:focus{
   background-color: var(--brand-blue-color);
   border-radius: 50%;
   width: 44px;
   height: 44px;
+  cursor: pointer;
 }
 .social.instagram::before{
   background-image: url(../images/instagram.svg);
+  background-color: rgba(255, 255, 255, 0.1);
 }
 .social.twitter::before{
   background-image: url(../images/twitter.svg);
+   background-color: rgba(255, 255, 255, 0.1);
 }
 .social.facebook::before{
   background-image: url(../images/facebook.svg);
+   background-color: rgba(255, 255, 255, 0.1);
 }
 .social.linkedin::before{
   background-image: url(../images/linkedin.svg);
+   background-color: rgba(255, 255, 255, 0.1);
 }
 
 
