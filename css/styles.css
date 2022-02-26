@@ -113,6 +113,7 @@ img {
 }
 
 .contact-nav .link {
+  display: flex;
   color: var(--brand-grey-color);
   text-decoration: none;
 
@@ -121,6 +122,7 @@ img {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  align-items: center;
   
 }
 .contact-nav .link:hover,
