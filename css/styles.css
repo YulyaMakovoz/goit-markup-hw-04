@@ -387,11 +387,37 @@ background-position:center;
 }
 
 /* Постоянные клиенты */
-.client list{
+.client.list{
   display: flex;
+  margin: 0;
+ 
+}
+.client-item >.link{
+  display: inline-block;
+  width: 170px;
+  height: 92px;
+  border: 1px solid #AFB1B8;
+  box-sizing: border-box;
+  border-radius: 4px;
+  margin: 0;
+  align-items: center;
+  background-position: center;
+  background-size: contain;
+  
 }
 .client-item{
   display: inline-block;
+  margin: 0;
+   
+}
+.company-icon{
+  
+  width: 106px;
+  height: 60px;
+  fill: #AFB1B8;
+  margin: 0;
+  
+
 }
 
 /*footer*/
