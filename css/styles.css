@@ -104,8 +104,13 @@ img {
 .contact-nav {
   display: flex;
   margin-left: auto;
+   
   
+}
+.contact-nav .item{
   
+  align-items: center;
+ 
 }
 .contact-nav .item + .item {
   margin-left: 50px;
@@ -113,7 +118,7 @@ img {
 }
 
 .contact-nav .link {
-  display: flex;
+  display: inline-block;
   color: var(--brand-grey-color);
   text-decoration: none;
 
@@ -123,26 +128,49 @@ img {
   line-height: 1.14;
   letter-spacing: 0.02em;
   align-items: center;
+ 
   
 }
-.contact-nav .link:hover,
-.contact-nav .link:focus {
-  color: var(--brand-blue-color);
+.contact-nav .link:hover .mail-icon {
+  fill: var(--brand-blue-color);
   cursor: pointer;
 }
-.contact-nav .link::before{
+.contact-nav .link:hover{
+  color: var(--brand-blue-color);
+}
+
+.mail-icon{
+ display: inline-block;
+ 
+  fill: currentColor;
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  
+  
+}
+
+.smartphone-icon{
+  width: 10px;
+  height: 12px;
+  
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+/* .contact-nav .link::before{
   display: inline-block;
   align-items: center;
   content: "";
  background-position: center;
  background-size: contain;
-  margin-right: 10px;
+  margin-right: 10px; */
   
   
   /* background-color: #212121; */
   
-}
-.contact-nav .link.envelope::before{
+/* } */
+/* .contact-nav .link.envelope::before{
    height: 12px;
   width: 16px;
   background-image: url(../images/envelope.svg);
@@ -151,7 +179,8 @@ img {
    height: 16px;
   width: 10px;
   background-image: url(../images/smartphone.svg);
-}
+} */
+
 
 /*main*/
 .section-hero-title {
@@ -238,7 +267,7 @@ img {
 .features-item:last-child {
   margin-right: 0;
 }
-.features-item::before{
+/* .features-item::before{
   content: "";
 display: block;
 height: 120px;
@@ -270,7 +299,7 @@ background-position:center;
 background-image: url(../images/icon-astronaut.svg);
 background-repeat: no-repeat;
 background-position:center;
-}
+} */
 .subtitle .features {
   font-style: normal;
   font-size: 14px;
@@ -369,7 +398,7 @@ background-position:center;
   margin-left: 32px;
 }
 
-.team-follow .social::before{
+/* .team-follow .social::before{
   
   background-color: #2196f3;
 }
@@ -384,7 +413,7 @@ background-position:center;
 }
 .social.linkedin-team::before{
   background-image: url(../images/linkedin.svg);
-}
+} */
 
 /* Постоянные клиенты */
 .client.list{
@@ -493,7 +522,7 @@ line-height: 1.14;
 .social{
   margin-right: 10px;
 }
-.social::before{
+/* .social::before{
   display: block;
   content: "";
   width: 44px;
@@ -503,7 +532,7 @@ line-height: 1.14;
   background-repeat: no-repeat;
   background-size: 20px 20px;
     
-}
+} */
 .social:last-child{
   margin-right: 0;
 }
@@ -515,7 +544,7 @@ line-height: 1.14;
   height: 44px;
   cursor: pointer;
 }
-.social.instagram::before{
+/* .social.instagram::before{
   background-image: url(../images/instagram.svg);
   background-color: rgba(255, 255, 255, 0.1);
 }
@@ -530,7 +559,7 @@ line-height: 1.14;
 .social.linkedin::before{
   background-image: url(../images/linkedin.svg);
    background-color: rgba(255, 255, 255, 0.1);
-}
+} */
 
 
 /*portfolio.html*/
